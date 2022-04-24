@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="single-demo">
+    <!--<div class="single-demo">
         <div class="flip down" id="flip">
             <div class="digital front number0"></div>
             <div class="digital back number1"></div>
@@ -16,7 +16,7 @@
             <button id="btn1">向下翻-1</button>
             <button id="btn2">向上翻+1</button>
         </div>
-    </div>
+    </div>-->
     <div class="clock" id="clock">
         <div class="flip down">
             <div class="digital front number0"></div>
@@ -50,14 +50,14 @@
     var flip = document.getElementById('flip')
     var backNode = document.querySelector('.back')
     var frontNode = document.querySelector('.front')
-    var btn1 = document.getElementById('btn1')
+    /*var btn1 = document.getElementById('btn1')
     var btn2 = document.getElementById('btn2')
     btn1.addEventListener('click', function () {
         flipDown();
     })
     btn2.addEventListener('click', function () {
         flipUp();
-    })
+    })*/
     // 当前数字
     var count = 0
     // 是否正在翻转（防止翻转未结束就进行下一次翻转）
