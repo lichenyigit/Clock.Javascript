@@ -11,6 +11,14 @@
 <script>
     let targetUrl = location.href.replace("index", "clock");
     window.open(targetUrl, '', `width=500,height=600,top=200px,left=${window.screen.width - 600}px`);
-    window.close();
+
+    window.open(``, '_self').close();
+
+    setInterval(() => {
+        console.log(window.closed)
+        if (!window.closed) {
+            window.open("about:blank","_self").close();
+        }
+    }, 1000);
 </script>
 </html>
